@@ -18,30 +18,33 @@ Below is the generator to make a property form as above
 
 
 Let's see pic below to figure out how in one form have some tabs with different form layout.
-1st tab:
+
+1st tab: (Content)
 
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss3.png)
 
-2nd tab
+2nd tab (Amenities)
 
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss4.png)
 
-3nd tab
+3nd tab (Photo Gallery)
 
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss5.png)
 
-4st
+4nd tab (Pricing)
 
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss6.png)
 
 
+Pic below is the layout for listing of Tour Packange content
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss7.png)
 
-
+Also pic below is listing for Vehicles, and you see that there are "Drivers" button at right, it's for sub content
 ![alt text](https://github.com/gophify/cms/blob/master/README/vehicles.png)
 
-
+Form editor for Vehicle
 ![alt text](https://github.com/gophify/cms/blob/master/README/vehicle-form.png)
+
 
 ![alt text](https://github.com/gophify/cms/blob/master/README/customform.png)
 
