@@ -1,0 +1,681 @@
+// Import Vuetify styling
+@require '~vuetify/src/stylus/app.styl'
+
+#__nuxt{
+  max-width: 1600px;
+}
+.page
+  @extend .fade-transition
+
+.drawerDesktop{
+  box-shadow: rgb(49, 70, 78) 0px 5px 20px inset;
+}
+.header h3{
+  font-size: 28px!important;
+  font-weight: 100;
+}
+.formGenerator input,
+.formGenerator select{
+  border: 1px solid #999!important;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 9px;
+  width: 100%;
+}
+.formGenerator #tab-1 input,
+.formGenerator #tab-1 select{
+  width: 98%;
+}
+.formGenerator #tab-2{
+  padding-right: 20px;
+}
+//MY CUSTOM
+.listing.row{
+  font-size: 20px;
+}
+.listing.row.th {
+    background-color: rgba(83, 110, 121, .2)!important;
+    letter-spacing: 1px;
+    color: rgb(88, 136, 58);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+}
+.listing.row:nth-child(2n+1){
+  background-color: rgba(126, 175, 77, .1);
+}
+
+
+.v-text-field--box .v-input__control .v-input__slot{
+  background-color: rgb(241, 248, 233);
+  border-bottom: 1px solid rgb(174, 213, 129);
+	height: 70px;
+}
+.v-text-field--box .v-input__control input{
+	margin-top: 30px;
+	font-size: 120%;
+  font-weight: bold;
+}
+.v-text-field--box .v-input__control .v-select__selection{
+	font-size: 120%;
+  font-weight: bold;
+}
+.v-text-field--box .v-input__prepend-inner{
+  padding-right: 15px;
+}
+
+.multipleFs>div{
+  border-right: 5px solid #dcedc8;
+  padding-right: 20px;
+}
+fieldset{
+  padding: 20px 0px 10px;
+  border: 1px solid #bbb;
+  margin: 15px 5px;
+  border-radius: 4px;
+  position: relative;
+}
+fieldset .action{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+fieldset label{
+  font-weight: bold;
+  margin-top: 8px;
+  margin-right: 15px;
+  text-align: right;
+  float: left;
+  font-size: 14px;
+  width: 100px;
+  letter-spacing: 1px;
+}
+fieldset label:after{
+  content: ':';
+  margin-left: 5px;
+}
+fieldset img{
+  float: left;
+  margin-right: 15px;
+}
+fieldset input,
+fieldset textarea{
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: calc(100% - 160px);
+    border-radius: 4px;
+    padding: 7px 8px 7px 15px;
+    background-color: rgb(241, 248, 233);
+    border: 1px solid rgb(174, 213, 129) !important;  
+}
+fieldset>.layout>.flex{
+  margin: 5px 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 14px!important;
+  color: #ccc!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px!important;
+  color: #ccc!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 14px!important;
+  color: #ccc!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 14px!important;
+  color: #ccc!important;
+}
+
+.v-navigation-drawer.mini-variant-false{
+	width: 180px!important;
+}
+nav.v-toolbar.v-toolbar--fixed{
+	padding-left: 200px!important;
+}
+#app{
+  font-family: 'Open Sans Condensed', sans-serif!important;
+}
+.arial{
+  font-family: 'arial'!important;
+}
+.bold{
+  font-weight: bold!important;
+}
+.w100{
+  font-weight: 100!important;
+}
+.book-font{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#app h1,
+#app h2,
+#app h3,
+#app h4{
+  /* font-family: 'Slabo 27px', serif!important; */
+  font-family: 'Roboto Slab', serif!important;
+}
+nowrap, .nowrap {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-right: 15px;
+}
+a{
+    text-decoration: none;
+}
+*:focus {
+  outline: none!important;
+}
+.breadcrumbs{
+	padding: 7px auto;
+	display: table;
+  width: 100%;
+}
+.breadcrumbs span,
+.breadcrumbs a,
+.breadcrumbs i{
+  color: #AED581!important;
+}
+.breadcrumbs span,
+.breadcrumbs a{
+  letter-spacing: 1px;
+  font-size: 110%;
+}
+.content{
+  min-height: 800px;
+}
+form .single .v-chip .v-chip__content{
+  font-size: 22px!important;
+}
+form .multiple .v-chip .v-chip__content{
+  font-size: 16px!important;
+}
+.v-input{
+  margin-top: 0!important;
+}
+.v-btn,
+.v-chip__content{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.v-btn--large{
+  font-size: 120%;
+}
+.v-btn__content{
+  font-weight: bold;
+}
+.v-btn--small{
+  text-transform: none;
+}
+.v-speed-dial--direction-top .v-speed-dial__list{
+  width: 250px!important;
+  margin-left: -170px!important;
+  display: table;
+  text-align: right!important;
+}
+.menuleft{
+    list-style-type: none;
+    padding: 11px 10px 0 0;
+}
+.menuleft li a{
+    margin: 1px 0;
+    padding: 10px;
+    display: block;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    color: #ffffff; 
+    font-size: 15px; 
+    letter-spacing: 1px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+.menuleft li a:hover,
+.menuleft li a.active{
+  background-color: #7EAF4D;
+  border-left: 5px solid #AFD285;
+  padding-left: 5px!important;
+}
+.menuleft li i{
+    margin-right: 8px;
+    width: 20px;
+}
+.loadingpage{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: center center;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    border-bottom: 60px solid #ffffff!important;
+}
+.floating-btn{
+  position: fixed; bottom: 10px; right: 10px;
+  z-index: 9;
+}
+.floating-btn>div{
+  float: left;
+}
+.floating-btn>div:nth-last-child(1){
+  margin-top: -10px;
+}
+.v-text-field .v-text-field__details{
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    text-align: right;
+}
+.v-text-field .v-text-field__details .v-messages__message{
+  height: 15px;
+}
+.input_headline{
+  padding: 50px 30px;
+  font-family: 'Roboto Slab', serif!important;
+  font-size: 24px; 
+  width: 100%; 
+  background-color: rgba(234, 248, 247, 0.5);
+  /* border-right: 1px solid #26A69A; */
+}
+.field_wrapper{
+  height: 81%;
+  background-color: rgba(234, 248, 247, 0.5)!important;
+}
+.input_auto_H .v-input__slot,
+.input_tags .v-input__slot{
+  height: auto!important;
+  padding: 20px 30px!important;
+  background-color: rgba(234, 248, 247, 0)!important;
+}
+.input_lg, .input_md{
+  background-color: rgba(234, 248, 247, 0.5);
+}
+.input_lg input{
+  padding: 50px 30px 35px!important;
+  font-family: 'Roboto Slab', serif!important;
+  font-size: 20px!important; 
+  width: 100%; 
+  /* border-right: 1px solid #26A69A; */
+}
+.input_lg .v-messages{
+  font-size: 14px;
+  min-height: 22px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.input_md input{
+  padding: 30px 20px 20px!important;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 100%; 
+  background-color: rgba(234, 248, 247, 0.5);
+}
+.input_md .v-messages{
+  font-size: 16px;
+  min-height: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.input_textarea textarea{
+  font-size: 18px!important;
+  width: 100%;
+  background-color: rgba(234, 248, 247, 0.5);
+  min-height: 200px;
+  line-height: 26px!important;
+}
+.v-textarea textarea{
+  padding: 15px 20px!important;
+}
+.input_textarea .v-messages{
+  font-size: 16px;
+  min-height: 26px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.border_section{
+  color: #555;
+  background-color: #DCEDC8;
+  width: 100%;
+  display: table;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.icon_section{
+  background-color: #AED581;
+  padding: 6px 10px 6px 15px;
+  margin-right: 15px;
+  display: table; float: left; width: 43px;
+}
+.label_section{
+  margin-top: 7px; 
+  display:table; 
+  float: left;
+}
+.v-input__slot:before,
+.v-input__slot:after{
+  display: none!important;
+}
+.imgwrapper{
+  background-repeat: no-repeat!important;
+  background-position: center center !important;
+  width: 100%;
+  position: relative;
+}
+.imgwrapper i{
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;  
+}
+.imgwrapper.grid{
+  border: 1px solid #ddd;
+  height: 150px; 
+}
+.imgwrapper.l{
+  background-size: auto 128px!important;
+}
+.imgwrapper.ori{
+  background-size: auto 90%!important;
+}
+.imgwrapper.p{
+  background-size: 128px auto!important;
+}
+.imgwrapper.active__img{
+  border: 3px solid #f00;
+  display: table;
+}
+.bg_cover{
+  background-size: cover!important;
+  background-position: center center!important;
+}
+
+/****LISTING***/
+.listing .item:nth-child(2n+1){
+    background-color: #DCEDC8;
+}
+.listing .v-btn{
+  margin: auto!important;
+}
+
+.tabcontent{
+  min-height: 800px;
+  display: none;
+}
+.tabcontent.active{
+  display: block;
+}
+
+.mainTabs{
+  margin: 0 30px;
+}
+.mainTabs .v-tabs__bar{
+  background-color: #7cb342 !important;
+}
+.mainTabs .v-tabs__item{
+  color: white!important;
+  border-top: 5px solid #689F38;
+  background-color: #689F38!important;
+  margin: 0 8px -2px;
+  font-size: 15px;
+  letter-spacing: 1px;  
+}
+.mainTabs .v-tabs__item.v-tabs__item--active{
+  color: #536E79!important;
+  border-top: 5px solid #536E79;
+  background-color: #FAFAFA!important;
+  height: 50px;
+  font-weight: bold;  
+}
+.mainTabs .v-tabs__item.v-tabs__item--active i{
+  color: #536E79;
+}
+.mainTabs .v-tabs__slider.yellow{
+  display: none;
+}
+
+.v-card__title--primary{
+  padding: 10px 0 5px 25px;
+}
+
+.cal-avail{
+  /*display: table;*/
+  width: 100%;
+}
+.cal-hscroll{
+  display: flex;
+  width: 100%;
+  max-width: 1405px;
+  overflow-x: scroll;
+}
+.cal-avail .cal-room{
+  width: 200px;
+  text-align: right;
+  background-color: #7EAF4D;
+  color: white;
+  padding: 5px;
+  margin: 1px 0 0;
+}
+.cal-avail .cal-room a{
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.cal-avail .cal-room.first{
+  margin-top: 19px;
+}
+.cal-avail .cal-per-month{
+  margin: 1px 5px 0;
+  background-color: #DCEBC9;
+}
+.cal-avail .cal-el-nowrap{
+  display: inline-flex;
+}
+.cal-avail .cal-d{
+    display: table;
+    font-size: 12px;
+    width: 25px;
+    height: 30px;
+    padding: 5px;
+    border-right: 1px solid #B0CF88;
+    text-align: center;
+}
+.cal-avail .cal-d.red{
+  color: white!important;
+  background-color: red!important;
+}
+.cal-avail .cal-d.blockByAdmin{
+  color: white!important;
+  background-color: #FFCDD2!important;
+  border-color: #FFCDD2!important;
+  color: #333!important;
+}
+
+.book input{
+  padding: 26px 10px;
+}
+
+.data-table thead{
+  background-color: #536E79;
+  color: white;
+}
+.data-table tbody tr:nth-child(2n+1){
+  background-color: #DCEBC9;
+}
+
+.data-table th,
+.data-table td{
+  padding: 10px;
+}
+
+
+.booking_detail{
+  font-family: 'Roboto Slab', serif!important;
+}
+.booking_detail label{
+  float: left;
+}
+.booking_detail value{
+  float: right;
+}
+.booking_detail p.leftright {
+  display: table;
+  width: 100%;
+  background-color: #DCE9C9;
+  margin: 3px 0;
+  padding: 8px 15px;
+  max-width: 500px;
+  font-size: 90%;
+}
+.booking_detail p.leftright.darken{
+  background-color: #7EAF4D;
+  color: #fff;
+}
+.booking_detail p.leftright b{
+  font-size: 120%;
+}
+
+
+
+
+
+
+.loginForm{
+  background-color: rgb(83, 110, 121);
+  font-family: 'Open Sans Condensed', sans-serif!important;
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+.loginForm .error--text{
+  color: red;
+}
+.loginForm h1{
+  margin: 15% 5% 15px;
+  letter-spacing: 2px;
+  font-size: 42px;
+  color: white;
+}
+.loginForm button{
+  height: 60px!important;
+  width: 250px!important;
+  margin: 20px 5%!important;
+}
+.loginForm .v-btn__content{
+  font-size: 26px!important;
+}
+.loginForm input{
+  font-family: 'Open Sans Condensed', sans-serif!important;
+  padding: 50px 30px 20px!important;
+  color: #888;
+  font-size: 32px;
+}
+.loginForm .v-messages{
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 26px;
+  margin-right: 20px;
+}
+.loginForm .v-input input{
+  max-height: 90px;
+}
+.loginForm .v-input{
+  padding: 0 5%;
+  background-color: rgb(243, 252, 252);
+  border-bottom: 1px dashed rgba(83, 110, 121, .3);
+} 
+.loginForm .v-input__slot{
+  border: none!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .loginForm h1{
+      font-size: 28px;
+      margin-top: 200px;
+    }
+    .loginForm input{
+      padding: 30px 0px 20px !important;
+      font-size: 22px;
+    }
+
+    aside img{
+      width: 80px;
+    }
+    .menuleft li a{
+      font-size: 12px;
+      padding: 10px;
+      margin: 0;
+    }
+    .menuleft li a i{
+      font-size: 16px;
+    }    
+    .header{
+      padding-top: 10px!important;
+      margin-bottom: 0!important;
+    }
+    .header h3{
+      font-size: 22px!important; 
+    }
+    .header h3 i{
+      font-size: 24px!important;
+    }
+    .mainTabs{
+      margin: 0;
+    }
+    .mainTabs .v-tabs__item{
+      font-size: 12px;
+    }
+    .cal-avail .cal-room{
+      width: 150px;
+    }
+    .input_lg input{
+      padding: 30px 30px 20px !important;
+      font-size: 16px !important;
+    }
+    .input_md input,
+    .input_textarea textarea{
+      font-size: 15px !important;
+      font-family: 'Open Sans Condensed', sans-serif!important; 
+    }
+    fieldset {
+        padding: 10px 0;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    fieldset label,
+    fieldset input,
+    fieldset textarea{
+      width: calc(100% - 16px);
+      padding: 4px 8px;
+      margin-top: 0;
+      font-size: 12px;
+      text-align: left;
+      float: none;
+    }
+    fieldset .action .v-btn__content i{
+      font-size: 14px!important;
+    }
+    fieldset .fscontent{
+      margin-top: 40px;
+    }
+    nowrap, .nowrap {
+      display: block;
+    }
+    .listing.row{
+      font-size: 14px;
+    }
+    .listing.row .more_vert{
+      font-size: 18px;
+    }
+}

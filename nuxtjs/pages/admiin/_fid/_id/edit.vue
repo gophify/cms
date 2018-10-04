@@ -1,0 +1,3 @@
+<template>
+    <edit></edit>
+</template>

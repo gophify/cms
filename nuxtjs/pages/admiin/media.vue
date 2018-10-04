@@ -1,0 +1,3 @@
+<template>
+    <media></media>
+</template>
