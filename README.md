@@ -3,9 +3,16 @@
 <b>Gophify is an efficient and useful CMS to generate content editors, and a fast HTTP API on which to build modern applications.</b>
 
 
+Let's see what form can made by this cms.
+
+For the first example, this is the form for CRUD of property.
+
+
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss2.png)
 
-<b>xx</b>
+
+This is a generator to make the property form as above
+
 
 ![alt text](https://github.com/gophify/cms/blob/master/README/ss1.png)
 
