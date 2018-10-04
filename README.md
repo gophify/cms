@@ -48,4 +48,5 @@ so easy to create a various form and create table for itself
 <b>If you think need to see the live demo for this CMS or you would like to hire me, please feel free to contact me:</b>
 
 Name: Nawi
-Email: nawikartini@gmail.com
+
+Email: nawikartini[at]gmail.com
