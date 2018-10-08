@@ -10,8 +10,13 @@
 .drawerDesktop{
   box-shadow: rgb(49, 70, 78) 0px 5px 20px inset;
 }
+.middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .header h3{
-  font-size: 28px!important;
+  font-size: 22px!important;
   font-weight: 100;
 }
 .formGenerator input,
@@ -30,9 +35,6 @@
   padding-right: 20px;
 }
 //MY CUSTOM
-.listing.row{
-  font-size: 20px;
-}
 .listing.row.th {
     background-color: rgba(83, 110, 121, .2)!important;
     letter-spacing: 1px;
@@ -82,12 +84,12 @@ fieldset .action{
 fieldset label{
   font-weight: bold;
   margin-top: 8px;
-  margin-right: 15px;
+  margin-right: 8px;
   text-align: right;
   float: left;
-  font-size: 14px;
-  width: 100px;
-  letter-spacing: 1px;
+  font-size: 11px;
+  width: 110px;
+  letter-spacing: -.5px;
 }
 fieldset label:after{
   content: ':';
@@ -99,7 +101,7 @@ fieldset img{
 }
 fieldset input,
 fieldset textarea{
-    font-size: 16px;
+    font-size: 11px;
     letter-spacing: 1px;
     width: calc(100% - 160px);
     border-radius: 4px;
@@ -135,10 +137,9 @@ nav.v-toolbar.v-toolbar--fixed{
 	padding-left: 200px!important;
 }
 #app{
-  font-family: 'Open Sans Condensed', sans-serif!important;
-}
-.arial{
-  font-family: 'arial'!important;
+  font-family: monospace, sans-serif!important;
+  font-size: 11px;
+  color: rgb(83, 110, 121);
 }
 .bold{
   font-weight: bold!important;
@@ -182,7 +183,9 @@ a{
 .breadcrumbs span,
 .breadcrumbs a{
   letter-spacing: 1px;
-  font-size: 110%;
+  font-size: 13px;
+  opacity: 0.95;
+  font-family: Open Sans Condensed,sans-serif!important;
 }
 .content{
   min-height: 800px;
@@ -196,19 +199,13 @@ form .multiple .v-chip .v-chip__content{
 .v-input{
   margin-top: 0!important;
 }
-.v-btn,
-.v-chip__content{
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-.v-btn--large{
-  font-size: 120%;
-}
-.v-btn__content{
-  font-weight: bold;
-}
 .v-btn--small{
   text-transform: none;
+  font-size: 11px;
+}
+.v-btn--large {
+  font-size: 12px!important;
+  font-weight: bold!important;
 }
 .v-speed-dial--direction-top .v-speed-dial__list{
   width: 250px!important;
@@ -226,11 +223,9 @@ form .multiple .v-chip .v-chip__content{
     display: block;
     transition-duration: 0.5s;
     transition-property: color, background-color;
-    font-family: 'Open Sans Condensed', sans-serif; 
     color: #ffffff; 
-    font-size: 15px; 
+    font-size: 12px; 
     letter-spacing: 1px; 
-    font-weight: bold; 
     text-transform: uppercase;
 }
 .menuleft li a:hover,
@@ -299,7 +294,7 @@ form .multiple .v-chip .v-chip__content{
 .input_lg input{
   padding: 50px 30px 35px!important;
   font-family: 'Roboto Slab', serif!important;
-  font-size: 20px!important; 
+  font-size: 16px!important; 
   width: 100%; 
   /* border-right: 1px solid #26A69A; */
 }
@@ -312,9 +307,8 @@ form .multiple .v-chip .v-chip__content{
 
 .input_md input{
   padding: 30px 20px 20px!important;
-  font-size: 20px;
-  letter-spacing: 1px;
   width: 100%; 
+  font-size: 12px;
   background-color: rgba(234, 248, 247, 0.5);
 }
 .input_md .v-messages{
@@ -325,7 +319,8 @@ form .multiple .v-chip .v-chip__content{
 }
 
 .input_textarea textarea{
-  font-size: 18px!important;
+  font-size: 12px!important;
+  color: #444!important;
   width: 100%;
   background-color: rgba(234, 248, 247, 0.5);
   min-height: 200px;
@@ -359,6 +354,7 @@ form .multiple .v-chip .v-chip__content{
   margin-top: 7px; 
   display:table; 
   float: left;
+  font-weight: 100;
 }
 .v-input__slot:before,
 .v-input__slot:after{
@@ -427,7 +423,7 @@ form .multiple .v-chip .v-chip__content{
   border-top: 5px solid #689F38;
   background-color: #689F38!important;
   margin: 0 8px -2px;
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: 1px;  
 }
 .mainTabs .v-tabs__item.v-tabs__item--active{
@@ -469,7 +465,8 @@ form .multiple .v-chip .v-chip__content{
 .cal-avail .cal-room a{
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: monospace, sans-serif!important;
 }
 .cal-avail .cal-room.first{
   margin-top: 19px;
@@ -483,10 +480,11 @@ form .multiple .v-chip .v-chip__content{
 }
 .cal-avail .cal-d{
     display: table;
-    font-size: 12px;
+    color: #666;
+    font-size: 9px;
     width: 25px;
     height: 30px;
-    padding: 5px;
+    padding: 10px 5px 0;
     border-right: 1px solid #B0CF88;
     text-align: center;
 }
@@ -498,7 +496,7 @@ form .multiple .v-chip .v-chip__content{
   color: white!important;
   background-color: #FFCDD2!important;
   border-color: #FFCDD2!important;
-  color: #333!important;
+  color: #777!important;
 }
 
 .book input{
@@ -552,7 +550,7 @@ form .multiple .v-chip .v-chip__content{
 
 .loginForm{
   background-color: rgb(83, 110, 121);
-  font-family: 'Open Sans Condensed', sans-serif!important;
+  font-family: monospace, sans-serif!important;
   height: 100vh;
   width: 100%;
   display: table;
@@ -576,7 +574,7 @@ form .multiple .v-chip .v-chip__content{
   font-size: 26px!important;
 }
 .loginForm input{
-  font-family: 'Open Sans Condensed', sans-serif!important;
+  font-family: monospace, sans-serif!important;
   padding: 50px 30px 20px!important;
   color: #888;
   font-size: 32px;
@@ -625,28 +623,20 @@ form .multiple .v-chip .v-chip__content{
       margin-bottom: 0!important;
     }
     .header h3{
-      font-size: 22px!important; 
+      font-size: 20px!important; 
     }
     .header h3 i{
-      font-size: 24px!important;
+      font-size: 18px!important;
     }
     .mainTabs{
       margin: 0;
-    }
-    .mainTabs .v-tabs__item{
-      font-size: 12px;
     }
     .cal-avail .cal-room{
       width: 150px;
     }
     .input_lg input{
       padding: 30px 30px 20px !important;
-      font-size: 16px !important;
-    }
-    .input_md input,
-    .input_textarea textarea{
-      font-size: 15px !important;
-      font-family: 'Open Sans Condensed', sans-serif!important; 
+
     }
     fieldset {
         padding: 10px 0;
@@ -657,9 +647,8 @@ form .multiple .v-chip .v-chip__content{
     fieldset input,
     fieldset textarea{
       width: calc(100% - 16px);
-      padding: 4px 8px;
+      padding: 8px;
       margin-top: 0;
-      font-size: 12px;
       text-align: left;
       float: none;
     }
@@ -671,9 +660,6 @@ form .multiple .v-chip .v-chip__content{
     }
     nowrap, .nowrap {
       display: block;
-    }
-    .listing.row{
-      font-size: 14px;
     }
     .listing.row .more_vert{
       font-size: 18px;

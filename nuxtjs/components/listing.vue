@@ -46,14 +46,15 @@
                 </v-layout>
 
                 <v-layout listing py-1 row v-for="(data, i) in list" :key="i">
-                  <v-flex xs1 text-xs-center pl-2>{{ i+1 }}</v-flex>                  
+                  <v-flex xs1 text-xs-center pl-2 middle>{{ i+1 }}</v-flex>                  
                   
-                  <v-flex :class="'pl-2 '+ c.Class" v-for="(c, ci) in column" :key="ci">
+                  <v-flex :class="'pl-2 middle '+ c.Class" v-for="(c, ci) in column" :key="ci">
                     <!-- <span v-if="c.Type === 'image'">{{ data[c.M] }}</span> -->
                     <span v-if="c.Type === 'image'" :style="'float: left; width: 100%; max-width: 55px; height: 38px; display: table; background-size: cover; background-position: center; background-image: url('+ $store.state.mediaPath + ((data[c.M] != null & data[c.M].length > 0) ? JSON.parse(data[c.M])[0].dir + ((JSON.parse(data[c.M])[0].IsThumb == 'true') ? 'thumbnails-128/' : '') + JSON.parse(data[c.M])[0].mfn : '') +');'" v-on:click="src=$store.state.mediaPath + ((data[c.M] != null) ? JSON.parse(data[c.M])[0].dir + JSON.parse(data[c.M])[0].mfn : ''), imgpopup=true"></span>
-                    <v-icon v-if="c.Type === 'image'" class="hidden-xs-only" small style="float: left;" v-on:click="src=$store.state.mediaPath + ((data[c.M] != null & data[c.M].length > 0) ? JSON.parse(data[c.M])[0].dir + JSON.parse(data[c.M])[0].mfn : ''), imgpopup=true" 
+                    <!-- <v-icon v-if="c.Type === 'image'" class="hidden-xs-only" small style="float: left;" v-on:click="src=$store.state.mediaPath + ((data[c.M] != null & data[c.M].length > 0) ? JSON.parse(data[c.M])[0].dir + JSON.parse(data[c.M])[0].mfn : ''), imgpopup=true" 
                     color="green">
-                      zoom_in</v-icon>
+                      zoom_in</v-icon> -->
+                    
                     
                     <nuxt-link v-if="c.M=='title'" :to="($route.params.child ? '/admiin/'+ $route.params.fid +'/' + $route.params.id + '/' + tableName + '/' + data.id + '/edit/' : '/admiin/'+ tableName +'/' + data.id + '/edit/')">
                       {{ (data['title'] != null) ? ((data['title'].length > 48) ? (data['title'].substring(0, 48) + '...') : data['title']) : '' }}
@@ -61,9 +62,9 @@
                     <span v-if="c.M !='title' & c.Type !='image'">{{ data[c.M] }}</span>
                   </v-flex>
 
-                  <v-flex xs2 text-xs-center>
+                  <v-flex xs2 text-xs-center mt-2>
                     <nuxt-link class="hidden-sm-and-down mr-3" :to="($route.params.child ? '/admiin/'+ $route.params.fid +'/' + $route.params.id + '/' + tableName + '/' + data.id + '/edit/' : '/admiin/'+ tableName +'/' + data.id + '/edit/')">
-                      <v-icon color="orange">
+                      <v-icon small color="orange">
                           edit
                       </v-icon>
                     </nuxt-link>

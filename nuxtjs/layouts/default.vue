@@ -6,12 +6,10 @@
               
               <a href="/" style="
                   color: #fff;
-                  font-weight: bold;
-                  letter-spacing: 2px;
                   display: table;
                   width: 100%;
                   margin-top: 30px;
-                  font-size: 26px;
+                  font-size: 18px;
                   margin-left: 14px;
               ">Gophify</a>              
               
@@ -38,7 +36,7 @@
               <v-toolbar dense dark color="light-green darken-3" class="hidden-sm-and-up">
                 <v-toolbar-side-icon v-if="!mainmenu_drawer" v-on:click="mainmenu_drawer=true" style="cursor: pointer;"></v-toolbar-side-icon>
 
-                <v-toolbar-title>Gophify</v-toolbar-title>
+                <v-toolbar-title style="font-size: 14px;">Gophify</v-toolbar-title>
 
                 <v-spacer></v-spacer>
 

@@ -40,14 +40,14 @@
                 </v-layout>
 
                 <v-layout listing py-2 row v-for="(data, i) in list" :key="i">
-                  <v-flex xs1 text-xs-center>{{ i+1 }}</v-flex>                  
+                  <v-flex xs1 middle text-xs-center>{{ i+1 }}</v-flex>                  
                   
-                  <v-flex xs10>
+                  <v-flex middle xs10>
                     <nuxt-link :to="'/admiin/independent/' + data.Id + '/edit/'">{{ data['Title'] }}</nuxt-link>
                   </v-flex>
 
-                  <v-flex xs1 text-xs-center>
-                    <nuxt-link :to="'/admiin/independent/' + data.Id + '/edit/'"><v-icon color="orange">edit</v-icon></nuxt-link></v-flex>
+                  <v-flex xs1 middle text-xs-center>
+                    <nuxt-link :to="'/admiin/independent/' + data.Id + '/edit/'"><v-icon small color="orange">edit</v-icon></nuxt-link></v-flex>
                 </v-layout>
               </div>
             </div>

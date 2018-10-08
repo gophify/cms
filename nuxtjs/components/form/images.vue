@@ -8,9 +8,9 @@
                           <v-icon color="black">zoom_in</v-icon>
                         </v-flex>
                         <v-flex class="xs8 pt-4 pb-2">                    
-                            <span style="display: table; float: left; width: 25px;margin-left: 6px; padding-top: 12px;">title:</span>
+                            <span style="font-size: 9px; display: table; float: left; width: 34px; margin-left: 6px; padding-top: 12px;">title:</span>
                             <input v-on:change="emitFormVal" v-model="data[i]['title']" style="width:calc(100% - 60px);margin-top:9px;margin-bottom:2px;border-radius:4px;padding:3px 8px;background-color: #F1F8E9;border:1px solid #AED581!important;">                                       
-                            <span style="display: table; float: left; width: 25px;margin-left: 6px; padding-top: 12px;">alt:</span>
+                            <span style="font-size: 9px; display: table; float: left; width: 34px; margin-left: 6px; padding-top: 12px;">alt:</span>
                             <input v-model="data[i]['alt']" type="text" style="width: 60%;margin-top:5px;margin-bottom:2px;border-radius:4px;padding:3px 8px;background-color: #F1F8E9;border:1px solid #AED581!important;">
                         </v-flex>
 
@@ -23,7 +23,7 @@
                 </v-flex>
             </v-layout>
           <v-flex xs12 ml-4 mt-3>
-              <v-btn  style="width: 240px;" dark color="success" v-on:click.stop="openMedia = true">select from media <v-icon right>cloud_upload</v-icon></v-btn>
+              <v-btn style="width:240px;font-size:11px;font-weight:bold;" dark color="success" v-on:click.stop="openMedia = true">select from media <v-icon right>cloud_upload</v-icon></v-btn>
           </v-flex>
         </v-container>
 

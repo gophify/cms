@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-flex class="py-3" style="display:table;width:100%;">
-        <div style="float: left; margin-right: 20px;"><span style="width: 16px; height: 16px; background-color: red; display: block; float: left; margin-top: 2px; margin-right: 6px;"></span> reserved & confirmed</div>
-        <div style="float: left;"><span style="width: 16px; height: 16px; background-color: #FFCDD2; display: block; float: left; margin-top: 2px; margin-right: 6px;"></span> blocked by admin</div>
+    <v-flex class="pt-3 pb-2" style="display:table;width:100%;">
+        <div style="float: left; margin-right: 20px;"><span style="width: 16px; height: 16px; background-color: red; display: block; float: left; margin-top: 0; margin-right: 6px;"></span> reserved & confirmed</div>
+        <div style="float: left;"><span style="width: 16px; height: 16px; background-color: #FFCDD2; display: block; float: left; margin-top: 0; margin-right: 6px;"></span> blocked by admin</div>
         <div class="hidden-xs-only" style="float: right; margin-right: 20px;">Nb: click on the room name to block the dates</div>
     </v-flex>
     <div v-if="loadingpage" :style="'background: url('+ $store.state.mediaPath +'/assets/images/main_loading.gif) no-repeat center center white; display: table; height: calc(100vh - 320px); width: 100%;'">
@@ -10,7 +10,7 @@
     <div class="cal-avail mb-3" v-for="p in properties" v-if="properties.length > 0">
         <v-flex class="border_section">
             <span class="icon_section"><v-icon dark small>check</v-icon></span>
-            <span class="label_section arial">{{ p.Title }}<!-- <small class="hidden-xs-only">({{ p.area }})</small>--></span>
+            <span class="label_section">{{ p.Title }}<!-- <small class="hidden-xs-only">({{ p.area }})</small>--></span>
         </v-flex>
         <div class="cal-hscroll">
             <div>
@@ -19,7 +19,7 @@
                       <h4 class="w100"><nuxt-link :to="'/admiin/roomtype/'+ r.Rt_id +'/room/'+ r.Id +'/edit/'">{{ r.Title }}</nuxt-link></h4>
                     </div>
                     <div class="cal-per-month" v-for="cal in cals">
-                        <div class="bold arial caption pl-2" style="letter-spacing: 1px; background-color: #fafafa; color:#536E79;" v-if="ri == 0">
+                        <div class="bold caption pl-2" style="background-color: #fafafa; color:#536E79;" v-if="ri == 0">
                             {{ cal.moName }} {{ cal.year }}
                         </div>
                         <div class="cal-el-nowrap">
