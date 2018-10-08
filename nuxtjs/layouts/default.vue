@@ -8,9 +8,9 @@
                   color: #fff;
                   display: table;
                   width: 100%;
-                  margin-top: 30px;
+                  margin-top: 50px;
                   font-size: 18px;
-                  margin-left: 14px;
+                  margin-left: 20px;
               ">Gophify</a>              
               
               <!-- <a href="/"><img :src="$store.state.apiPath + '/assets/images/outpost_logo_header.png'" width="115" class="mt-5 pt-3 ml-3" /></a> -->

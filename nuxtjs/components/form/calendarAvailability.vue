@@ -239,12 +239,13 @@ export default {
 #calendar .calendar th{
   text-align: right;
   width: 9.286%;
-  padding-right: 5%;
+  padding: 2%;
   height: 25px;
-  font-size: 13px;
+  font-size: 11px;
 }
 #calendar .calendar td.day{
   cursor: pointer;
+  font-size: 10px;
 }
 #calendar .calendar tr.monthNow th{
   padding-bottom: 8px;
