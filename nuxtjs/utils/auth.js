@@ -3,8 +3,8 @@ export default {
     if (localStorage.getItem('session')) {
       e.$store.commit('updateSession', JSON.parse(localStorage.getItem('session')))
     } else {
-      // e.$router.push({path: '/'})
-      // return false
+      e.$router.push({path: '/'})
+      return false
     }
   }
 }

@@ -2,7 +2,7 @@ export const state = () => ({
   sidebar: false,
   activeNav: '',
   breadcrumbs: [],
-  mediaPath: 'http://localhost:8080', // localhost/ 172.104.185.200
+  mediaPath: 'http://172.104.185.200:8080', // localhost/ 172.104.185.200
   apiPath: 'http://172.104.185.200:8080',
   // session: {role: 'root', firstname: 'Nawi', lastname: 'Kartini', uname: 'nawika', email: 'nawi@gmail.com'}
   session: {}
