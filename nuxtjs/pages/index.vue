@@ -1,6 +1,6 @@
 <template>
   <div class="loginForm">
-      <h1>Sign in to Gophify Admin v2</h1>
+      <h1>Sign in to Gophify Admin</h1>
       <v-form ref="form" v-model="valid" lazy-validation>
           <v-text-field
               prepend-icon="account_circle"
