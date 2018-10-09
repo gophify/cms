@@ -46,11 +46,10 @@
           transition="scale-transition"
           dismissible
           type="success"
-          style="font-size: 22px; font-weight: bold; text-align: center;"
+          style="font-size: 14px; font-weight: bold; text-align: center;"
           class="green lighten-5 green--text"
           outline
-        >
-          <v-icon large>check</v-icon> &nbsp; Data changes have been saved successfully
+        >Data changes have been saved successfully
         </v-alert>
 
         <v-form ref="form" class="mt-2 mb-5" style="display: table; width: 100%;" v-model="valid" lazy-validation> 

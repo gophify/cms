@@ -21,7 +21,7 @@
                 <input type="text" v-model="fields[fi]['label']" v-on:change="emitData" />
             </v-flex>
             <v-flex xs2>
-                <select v-model="fields[fi]['col']" v-on:change="emitData" multiple style="height: 44px;">
+                <select v-model="fields[fi]['col']" v-on:change="emitData" multiple style="height: 36px;">
                     <option :value="'xs'+i" v-for="i in 12" :key="'xs'+i">{{ 'xs'+i }}</option>
                     <option :value="'sm'+i" v-for="i in 12" :key="'sm'+i">{{ 'sm'+i }}</option>
                     <option :value="'md'+i" v-for="i in 12" :key="'md'+i">{{ 'md'+i }}</option>

@@ -112,7 +112,7 @@
                                     <input type="text" v-model="formProps['fields'][fi]['label']" />
                                 </v-flex>
                                 <v-flex xs2>
-                                    <select v-model="formProps['fields'][fi]['col']" multiple style="height: 44px;">
+                                    <select v-model="formProps['fields'][fi]['col']" multiple style="height: 36px;">
                                         <option :value="'xs'+i" v-for="i in 12" :key="'xs'+i">{{ 'xs'+i }}</option>
                                         <option :value="'sm'+i" v-for="i in 12" :key="'sm'+i">{{ 'sm'+i }}</option>
                                         <option :value="'md'+i" v-for="i in 12" :key="'md'+i">{{ 'md'+i }}</option>
@@ -128,8 +128,8 @@
                                     <input type="number" v-model="formProps['fields'][fi]['size']" v-if="formProps['fields'][fi]['type'] == 'input' || formProps['fields'][fi]['type'] == 'vehicleBrands' || formProps['fields'][fi]['type'] == 'vehicleModels' || formProps['fields'][fi]['type'] == 'textarea'" />
                                 </v-flex>
                                 <v-flex xs1 pl-2>
-                                    <v-icon small color="blue" v-if="fi > 0" v-on:click="arrow_upward_clicked(fi)">arrow_upward</v-icon> &nbsp; 
-                                    <v-icon small color="blue" v-if="fi < (formProps['fields'].length-1)" v-on:click="arrow_downward_clicked(fi)">arrow_downward</v-icon> &nbsp; 
+                                    <v-icon small color="blue" v-if="fi > 0" v-on:click="arrow_upward_clicked(fi)">arrow_upward</v-icon> 
+                                    <v-icon small color="blue" v-if="fi < (formProps['fields'].length-1)" v-on:click="arrow_downward_clicked(fi)">arrow_downward</v-icon> 
                                     <v-icon small color="red" v-on:click="delete_clicked(fi)">delete</v-icon>
                                 </v-flex>
 
@@ -143,16 +143,16 @@
                     </v-tab-item>                   
                     <v-tab-item id="tab-0">
                         <v-layout row wrap my-2>
-                            <v-flex xs2 text-xs-right subheading>Form title: &nbsp; </v-flex>
+                            <v-flex xs2 text-xs-right>Form title: &nbsp; </v-flex>
                             <v-flex xs5><input type="text" v-model="formProps['form_name']" /></v-flex>
 
-                            <v-flex xs1 text-xs-right subheading>Icon: &nbsp; </v-flex>
+                            <v-flex xs1 text-xs-right>Icon: &nbsp; </v-flex>
                             <v-flex xs4>
                               <input type="text" v-model="formProps['form_icon']" />
                             </v-flex>                            
                         </v-layout>
                         <v-layout row wrap my-2>
-                            <v-flex xs2 text-xs-right subheading>Form type: &nbsp; </v-flex>
+                            <v-flex xs2 text-xs-right>Form type: &nbsp; </v-flex>
                             <v-flex :xs2="formProps['form_type'] == 'r'" :xs10="formProps['form_type'] != 'r'">
                               <select v-model="formProps['form_type']">
                                   <option value="r">Regular</option>
@@ -160,12 +160,12 @@
                               </select>
                             </v-flex>
 
-                            <v-flex xs1 text-xs-right subheading v-if="formProps['form_type'] == 'r'">Table name: &nbsp; </v-flex>
+                            <v-flex xs1 text-xs-right v-if="formProps['form_type'] == 'r'">Table name: &nbsp; </v-flex>
                             <v-flex xs3 v-if="formProps['form_type'] == 'r'">
                               <input type="text" v-model="formProps['table_name']" />
                             </v-flex>
 
-                            <v-flex xs1 text-xs-right subheading v-if="formProps['form_type'] == 'r'">Table Parent: &nbsp; </v-flex>
+                            <v-flex xs1 text-xs-right v-if="formProps['form_type'] == 'r'">Table Parent: &nbsp; </v-flex>
                             <v-flex xs3 v-if="formProps['form_type'] == 'r'">
                               <select v-model="formProps['table_parent']">
                                   <option :value="tp.Name" v-for="(tp, tpi) in table_parents" :key="tpi">{{ tp.Title }}</option>
@@ -173,16 +173,16 @@
                             </v-flex>                            
                         </v-layout>
                         <v-layout row wrap my-2 v-if="formProps['table_child'] != ''">
-                            <v-flex xs2 text-xs-right subheading>Table Child: &nbsp; </v-flex>
+                            <v-flex xs2 text-xs-right>Table Child: &nbsp; </v-flex>
                             <v-flex xs4><input readonly type="text" v-model="formProps['table_child']" /></v-flex>
 
-                            <v-flex xs2 text-xs-right subheading>View child label: &nbsp; </v-flex>
+                            <v-flex xs2 text-xs-right>View child label: &nbsp; </v-flex>
                             <v-flex xs4>
                               <input type="text" v-model="formProps['viewChildLbl']" />
                             </v-flex>                            
                         </v-layout>                        
                         <v-layout row wrap my-2>
-                            <v-flex xs2 text-xs-right subheading>Tabs: &nbsp; </v-flex>
+                            <v-flex xs2 text-xs-right>Tabs: &nbsp; </v-flex>
                             <v-flex xs10>
                                 <v-layout row v-for="(tab, ti) in this.formProps['tabs']" :key="ti" class="mb-1">
                                     <v-flex xs5><input type="text" v-model="formProps['tabs'][ti]['icon']" placeholder="icon" /></v-flex>
