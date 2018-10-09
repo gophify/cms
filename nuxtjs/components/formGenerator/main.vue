@@ -161,12 +161,12 @@
                             </v-flex>
 
                             <v-flex xs1 mt-1 text-xs-right v-if="formProps['form_type'] == 'r'">Name: &nbsp; </v-flex>
-                            <v-flex xs3 mt-1 v-if="formProps['form_type'] == 'r'">
+                            <v-flex xs3 v-if="formProps['form_type'] == 'r'">
                               <input type="text" v-model="formProps['table_name']" />
                             </v-flex>
 
                             <v-flex xs1 mt-1 text-xs-right v-if="formProps['form_type'] == 'r'">Parent: &nbsp; </v-flex>
-                            <v-flex xs3 mt-1 v-if="formProps['form_type'] == 'r'">
+                            <v-flex xs3 v-if="formProps['form_type'] == 'r'">
                               <select v-model="formProps['table_parent']">
                                   <option :value="tp.Name" v-for="(tp, tpi) in table_parents" :key="tpi">{{ tp.Title }}</option>
                               </select>                              
