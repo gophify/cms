@@ -1,8 +1,17 @@
 // Import Vuetify styling
 @require '~vuetify/src/stylus/app.styl'
 
+body{
+  background-color: #546e7a;
+}
 #__nuxt{
   max-width: 1600px;
+}
+@media only screen and (min-width: 1601px) {
+  #__nuxt{
+    box-shadow: #31464e 0px 5px 20px;
+    position: relative;
+  }
 }
 .page
   @extend .fade-transition
@@ -101,7 +110,7 @@ fieldset img{
 }
 fieldset input,
 fieldset textarea{
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 1px;
     width: calc(100% - 160px);
     border-radius: 4px;
@@ -200,6 +209,16 @@ form .multiple .v-chip .v-chip__content{
 }
 .v-chip .v-chip__content{
   font-size: 11px;
+}
+.v-list .v-subheader{
+  font-size: 11px!important;
+  font-weight: bold;
+}
+.v-list__tile__title{
+  font-size: 12px!important;
+}
+.v-list__tile__sub-title{
+  font-size: 11px!important;
 }
 .v-btn--small{
   text-transform: none;
